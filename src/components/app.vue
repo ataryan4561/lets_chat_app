@@ -98,9 +98,10 @@
   import { f7, f7ready } from 'framework7-vue';
   import { getDevice }  from 'framework7/lite-bundle';
   import cordovaApp from '../js/cordova-app.js';
-  import firebase from 'firebase';
   import routes from '../js/routes.js';
   import store from '../js/store';
+  // import firebase from 'firebase';
+  import firebase from 'firebase/app';
 var firebaseConfig = {
     apiKey: "AIzaSyAY8EI9eET8bIJKQRc6NduGm5FH4ppbuQ8",
     authDomain: "lets-chat-5cb6b.firebaseapp.com",
@@ -112,7 +113,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  // firebase.analytics();
   export default {
     setup() {
       const device = getDevice();
