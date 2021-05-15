@@ -98,10 +98,21 @@
   import { f7, f7ready } from 'framework7-vue';
   import { getDevice }  from 'framework7/lite-bundle';
   import cordovaApp from '../js/cordova-app.js';
-
+  import firebase from 'firebase';
   import routes from '../js/routes.js';
   import store from '../js/store';
-
+var firebaseConfig = {
+    apiKey: "AIzaSyAY8EI9eET8bIJKQRc6NduGm5FH4ppbuQ8",
+    authDomain: "lets-chat-5cb6b.firebaseapp.com",
+    projectId: "lets-chat-5cb6b",
+    storageBucket: "lets-chat-5cb6b.appspot.com",
+    messagingSenderId: "480707586439",
+    appId: "1:480707586439:web:79746eec05d51523ad4b22",
+    measurementId: "G-L6JB2DJEHV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
   export default {
     setup() {
       const device = getDevice();
