@@ -1,7 +1,8 @@
 <template>
-  <f7-page name="about">
-    <f7-navbar title="Sign in" back-link="Back"></f7-navbar>
+  <f7-page name="signin">
+    <f7-navbar title="Sign In" back-link="Back"></f7-navbar>
     <f7-list no-hairlines-md>
+
 
  <f7-list-input :value="email" @input="email=$event.target.value"
     label="E-mail"
@@ -26,7 +27,7 @@
 <br>
 <div style="text-allign:center;">
 <f7-link>Resend Confirmation Email</f7-link><br>
-<f7-link>Don't have an account? Sign in</f7-link><br>
+<f7-link href="/signup/">Don't have an account? Sign in</f7-link><br>
 <f7-link>Forget Password</f7-link>
 </div>
 </f7-block>

@@ -8,6 +8,7 @@
         <f7-navbar title="Left Panel"></f7-navbar>
         <f7-list>
           <f7-list-item link="/signin/" view =".view-main" panel-close title="Sign in"></f7-list-item>
+          <f7-list-item link="/signup/" view =".view-main" panel-close title="Sign Up"></f7-list-item>
           </f7-list>
         <f7-block>Left panel content goes here</f7-block>
       </f7-page>
