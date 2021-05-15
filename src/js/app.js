@@ -1,6 +1,5 @@
 // Import Vue
 import { createApp } from 'vue';
-// import Vue from 'vue'
 
 // Import Framework7
 import Framework7 from 'framework7/lite-bundle';
@@ -17,22 +16,13 @@ import '../css/app.css';
 
 // Import App Component
 import App from '../components/app.vue';
-import store from "../pages/store/store";
-// import firebase from 'firebase';
-import firebase from 'firebase/app';
+
 // Init Framework7-Vue Plugin
 Framework7.use(Framework7Vue);
 
 // Init App
-// new Vue({
-//     el:'#app',
-//     render: (h) =>h(App),
-//     store,
-//     components: {
-//         app:App
-//     },
-// })
-const app = createApp({});
+const app = createApp(App);
+
 // Register Framework7 Vue components
 registerComponents(app);
 
